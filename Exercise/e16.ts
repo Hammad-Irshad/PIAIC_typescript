@@ -21,3 +21,22 @@ console.log("Dear " + guestList[0] + `,\n\nI would be honored to have you join m
 console.log("\nDear " + guestList[1] + `,\n\nYour dedication to justice and equality is an inspiration to us all. I would be delighted if you could join me for dinner.\n\nWarm regards,\n${myName}`);
 
 console.log("\nDear " + guestList[2] + `,\n\nYour genius and artistic vision have left an indelible mark on history. I would love to have the opportunity to share a meal and conversation with you.\n\nSincerely,\n${myName}`);
+
+// Informing about the bigger dinner table
+console.log("\nGreat news! We found a bigger dinner table!");
+
+// Add one new guest to the beginning of the array
+guestList.unshift("Marie Curie");
+
+// Add one new guest to the middle of the array
+guestList.splice(Math.floor(guestList.length / 2), 0, "Steve Jobs");
+
+// Add one new guest to the end of the array using append()
+guestList.push("Rosa Parks");
+
+// Printing new set of invitation messages
+console.log("\nNew Invitation Messages:");
+
+guestList.forEach(guest => {
+    console.log("\nDear " + guest + `,\n\nI'm thrilled to invite you to dinner. Your presence would make the evening truly special.\n\nWarm regards,\n${myName}`);
+});
