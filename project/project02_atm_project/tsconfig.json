@@ -1,0 +1,24 @@
+// {
+//   "compilerOptions": {
+//     "target": "es2022",             // or "esnext"
+//     "module": "es2022",             // or "esnext", "node16", "nodenext"
+//     "lib": ["es2022"],
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true
+//   }
+// }
+
+
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["es2022", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
